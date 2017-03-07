@@ -33,7 +33,7 @@ describe('Actions', () => {
 
   it('should generate toggle todo action', () => {
     var action = {
-      type: 'TOOGLE_TODO',
+      type: 'TOGGLE_TODO',
       id: '123'
     };
     var res = actions.toggleTodo(action.id);

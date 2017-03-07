@@ -20,7 +20,7 @@ export var addTodo = (text) => {
 
 export var toggleTodo = (id) => {
   return {
-    type: 'TOOGLE_TODO',
+    type: 'TOGGLE_TODO',
     id
   };
 };

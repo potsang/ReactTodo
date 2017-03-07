@@ -27,13 +27,13 @@ describe('Reducers', () => {
     });
   });
 
-  describe('todoReducer', () => {
+  describe('todosReducer', () => {
     it('should add new todo', () => {
       var action = {
         type: 'ADD_TODO',
         text: 'Walk the dog'
       };
-      var res = reducers.todoReducer(df([]), df(action));
+      var res = reducers.todosReducer(df([]), df(action));
 
       expect(res.length).toEqual(1);
       expect(res[0].text).toEqual(action.text);
@@ -53,7 +53,7 @@ describe('Reducers', () => {
         type: 'TOGGLE_TODO',
         id: '123'
       };
-      var res = reducers.todoReducer(df(todos), df(action));
+      var res = reducers.todosReducer(df(todos), df(action));
 
       expect(res[0].completed).toEqual(false);
       expect(res[0].completedAt).toNotExist();
