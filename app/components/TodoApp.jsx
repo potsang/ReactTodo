@@ -1,6 +1,4 @@
 const React = require('react');
-const uuid = require('uuid');
-const moment = require('moment');
 
 import TodoList from 'TodoList';
 import AddTodo from 'AddTodo';
